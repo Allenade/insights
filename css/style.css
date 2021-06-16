@@ -1,0 +1,126 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 87%;
+  flex-wrap: wrap;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+}
+.paragraph {
+  margin-left: 11%;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  padding-right: 10rem;
+  flex-wrap: wrap;
+}
+.container {
+  margin-top: 15%;
+  width: 100%;
+  height: 50vh;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.right {
+  background-color: hsl(244, 38%, 16%);
+  width: 35vw;
+  height: 50vh;
+
+  line-height: 25px;
+}
+.left {
+  background-color: hsl(244, 38%, 16%);
+  width: 35vw;
+  height: 50vh;
+  background-image: url(../images/image-header-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 100vw hsla(277, 68%, 40%, 0.733);
+
+  line-height: 25px;
+}
+@media screen and (max-width: 375px) {
+  span {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 31px;
+    padding-left: 2rem;
+    text-align: center;
+    padding-right: 2rem;
+
+    line-height: 100%;
+
+    font-family: "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 500px) {
+  .paragraph {
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .left {
+    margin-top: 2rem;
+margin-left: 1%;
+    width: 90vw;
+    padding-bottom: 30vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .right {
+    width: 90vw;
+    padding-bottom: 20vh;
+    margin-left: 1%;
+  }
+}
+.columns {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .col {
+    font-size: 13px;
+  }
+}
+
+.col h2 {
+  color: hsl(0, 0%, 100%);
+}
+.col p {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.color {
+  color: hsl(277, 64%, 61%);
+}
